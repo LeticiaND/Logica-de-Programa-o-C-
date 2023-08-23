@@ -1,15 +1,21 @@
-#include <iostream>
-
+#include <iostream> 
+#include <regex>
+using namespace std;
 int main()
 {
-    std::string senha = "Lllllllll";
+    std::string senha = "#Geks13";
+    const regex padrao("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[-+_!@#$%^&*.,?])(?!.*\\s).{1,8}$");
+    
 
-    if(senha.length() <= 8)
+    if(regex_match(senha, padrao))
     {
-        std::cout << "Sua senha passou";
-    }else
+        std::cout << "Yes";
+    }
+    else
     {
-        std::cout << "Sua senha tem mais de 8 caractere";
+        std::cout << "No";
     }
     
 }
+    
+
