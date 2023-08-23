@@ -12,7 +12,7 @@ int main ()
 
     for(int i = palavra.length() -1; i >= 0; i--) // usamos o length() pois estamos trabalhando com string e ele pega o total de letras e o size ele pega valores int.
     {
-        palavraInverso = palavraInverso + palavra[i]; // aqui estamos chamando a variavel palavraInverso que ira receber o valor da variavel palavraInverso e concatenando com a variavel palavra[i] que esta passando para a variavel palavraInverso a palavra inverdida para criar uma palavra novamente.
+        palavraInverso = palavraInverso + palavra[i]; // aqui estamos chamando a variavel palavraInverso que ira receber o valor da variavel palavraInverso e concatenando com a variavel palavra[i], que esta passando para a variavel palavraInverso a palavra inverdida para criar uma palavra novamente.
     }
 
     if (palavraInverso == palavra) 

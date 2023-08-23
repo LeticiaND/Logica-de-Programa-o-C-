@@ -9,11 +9,11 @@ int main()
     int i = 0;
     int soma = 0;
 
-    for(int k = 1; k <= numero; k++) //apenas fazendo a contagem de 1 ate numero.
+    for(int k = 1; k <= numero; k++) 
     {
         soma = i + j;
-        i = j; // i recebe o valor anterior de j.
-        j = soma; // passamos soma para j por que no calculo de fibonacci precisamos pegar o valor sa coma para poder fazer a outra soma. (j = soma/ i + j = 1 depois i + j = 2)
+        i = j; 
+        j = soma; // passamos soma para j pois no calculo de fibonacci precisamos pegar o valor da soma para poder fazer a outra soma. exc:(j = soma/ i + j = 1 depois i + j = 2)
         std::cout << j; 
     }
 }

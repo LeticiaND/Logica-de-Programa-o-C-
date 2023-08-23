@@ -6,7 +6,7 @@ int main()
 
     int resultado = 0;
 
-    for(int i = 0; i <= palavra.length(); i++)//entao esse codigo esta validando int com string o que nao pode
+    for(int i = 0; i <= palavra.length(); i++)
     {
         char* letra = new char(palavra[i]);
         

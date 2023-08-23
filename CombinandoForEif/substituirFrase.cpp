@@ -2,7 +2,7 @@
 
 int main()
 {
-    std::string frase = "eu sou linda"; //6
+    std::string frase = "eu sou linda"; 
     std::string textoFinal = ""; 
 
     for(int i = 0; i < frase.length(); i++)

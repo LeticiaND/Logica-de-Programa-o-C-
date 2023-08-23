@@ -7,10 +7,10 @@ int main ()
 
     int a = 25;
 
-    int resultado = 0; // variavel que recebe o valor da soma
+    int resultado = 0; 
     while(a > 0)
     {
-        int numero = a % 10; // retorna o numero
+        int numero = a % 10;
 
         resultado = resultado + numero; 
 

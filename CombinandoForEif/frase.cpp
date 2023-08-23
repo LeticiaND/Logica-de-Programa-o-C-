@@ -7,7 +7,7 @@ int main ()
     //usando uma estrutura "if", conte e exiba quantas letras (excluindo espaços) estão presentes na frase.
     std::string frase = "Eu amo a Leticia";
     int total = 0;
-    // frase.erase(std::remove_if(frase.begin(), frase.end(), ::isspace), frase.end());
+    // Essa é outra maneira que pode ser usada: frase.erase(std::remove_if(frase.begin(), frase.end(), ::isspace), frase.end()); 
     for(int i = 1; i <= frase.length(); i++)
     {
         char* letter = new char(frase[i]);

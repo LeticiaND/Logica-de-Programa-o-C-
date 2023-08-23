@@ -2,7 +2,7 @@
 
 int main ()
 {
-    // Peça dois numeros e apresente a soma deles
+    // Peça dois numeros e apresente a soma deles.
 
     int numero1 = 10;
     int numero2 = 1;

@@ -1,7 +1,7 @@
 #include <iostream>
 int main ()
 {
-    //idade genero e saldo e nome
+    //idade genero saldo e nome.
 
     std::string nome = "Leticia";
     int idade = 23;
