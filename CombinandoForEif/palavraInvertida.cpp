@@ -2,7 +2,7 @@
 
 int main()
 {
-    std::string palavra = "leticia";
+    std::string palavra = "banana";
     std::string palavraInvertida = "";
     
     for(int i = palavra.length() - 1; i >= 0; i--)

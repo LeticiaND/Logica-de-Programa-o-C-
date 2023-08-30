@@ -41,7 +41,7 @@ int main ()
     //Neste exercício, você vai contar quantas vezes uma determinada palavra aparece em uma string.
 
     std::string palavra = "eu";
-    std::string frase = "eu amo o rafael e eu me amo";
+    std::string frase = "eu te amo eu te adoro";
     std::vector<std::string> palavras = split(" ", frase);
 
     int quantidadeDePalavras = 0;
@@ -53,7 +53,5 @@ int main ()
             quantidadeDePalavras++;
         }
     }
-
     std::cout << quantidadeDePalavras;
-
 }
