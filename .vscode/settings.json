@@ -66,6 +66,9 @@
         "iterator": "cpp",
         "utility": "cpp",
         "deque": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "fstream": "cpp",
+        "iomanip": "cpp",
+        "stack": "cpp"
     }
 }
