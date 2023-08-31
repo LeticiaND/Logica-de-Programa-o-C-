@@ -29,20 +29,20 @@ std::vector<std::string> split(const char separator[], std::string text)
 
 std::string capitalizar(std::string frase) 
 {
-    std::vector<std::string> novasPalavras = split(" ", frase);//trasformando a frase em palavras.
-    std::string remontando = ""; //variavel recebe as palavras.
+    std::vector<std::string> novasPalavras = split(" ", frase);
+    std::string remontando = ""; 
 
-    for(int i = 0; i < novasPalavras.size(); i++)//acesando as palavras
+    for(int i = 0; i < novasPalavras.size(); i++)
     {
         
-        for (int k = 0; k < novasPalavras[i].length(); k++)//acessando as letras
+        for (int k = 0; k < novasPalavras[i].length(); k++)
         {
-            if (k == 0) //entao se k for igual a 0 por que cada palavra comeca com o 0 
+            if (k == 0) 
             {
                 remontando += (char) toupper(novasPalavras[i][k]);                 
             } else 
             {
-                remontando += novasPalavras[i][k];//"se nao" pega as minusculas e joga para a variavel.
+                remontando += novasPalavras[i][k];
             }
 
         }
