@@ -49,5 +49,16 @@ int main()
         remontandoFrase += " ";
     }
     
+// segunda forma de fazer.
+    for(int i = 0; i < novasPalavras.size(); i++)
+    {
+        if(novasPalavras[i] == palavra)
+        {
+            novasPalavras[i] = palavraSubstituir;
+        }
+
+        remontandoFrase += novasPalavras[i] + " ";
+    }
+
     std::cout << remontandoFrase;
 }
