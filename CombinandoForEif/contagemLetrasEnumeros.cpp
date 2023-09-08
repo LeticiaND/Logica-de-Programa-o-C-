@@ -3,20 +3,24 @@
 #include <cstdlib>
 int main()
 {
-    //TERMINAR
     //Neste exercício, você vai criar uma função que conta quantas letras e quantos dígitos (números) existem em uma string.
 
-    std::string frase = "Tenho 22 anos";
+    std::string frase = "Tenho 20 anos";
     int quantidadeDeLetras = 0;
     int quantidadeDeNumeros = 0;
-    int i = std::atoi(frase.c_str());//não pode ser representado como um inteiro se retornar 0;
 
-    std::cout << i << std::endl;
     for(int i = 0; i <= frase.length(); i++)
     {
-        quantidadeDeLetras += frase[i];
+        std::string letter;
+        letter.push_back(frase[i]);//(push_back) estamos remontando um char para string.
+        
+        if(std::atoi(letter.c_str()) == 0){ 
+            quantidadeDeLetras++; //(atoi) so consegue converter string nao char.
+        } else {
+            quantidadeDeNumeros++;
+        }
     }
 
-    std::cout << "A frase contém: " << quantidadeDeLetras << "letras";
+    std::cout << "A frase contém: " << quantidadeDeLetras << "letras" << "\n" << "e " << quantidadeDeNumeros << " numeros";
 
-}
+} 
