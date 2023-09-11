@@ -16,3 +16,6 @@ int main ()
     
     std::cout << vet[4];
 }
+
+
+
