@@ -4,8 +4,8 @@ int main ()
 {
     //Determinar o maior de três números.
 
-    int num1 = 1;
-    int num2 = 2;
+    int num1 = 9;
+    int num2 = 4;
     int num3 = 3;
 
     int maiorNum = 0;
