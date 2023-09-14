@@ -4,7 +4,7 @@ int main()
 {
     //Verificando números primos.
 
-    std::vector<int> lista = {8, 19, 10, 23, 7, 13, 2};
+    std::vector<int> lista = {8, 19, 10, 23, 7, 13, 31};
 
     for(int i = 0; i < lista.size(); i++)
     {
