@@ -2,9 +2,10 @@
 
 int main()
 {
-    //soma dos digitos (separando cada numero)
+    //separando cada numero.
     int num = 123;
     int soma = 0;
+    
     while(num > 0)
     {
         printf("%d - ",num % 10);
@@ -12,5 +13,4 @@ int main()
         
     }
    
-  
 }

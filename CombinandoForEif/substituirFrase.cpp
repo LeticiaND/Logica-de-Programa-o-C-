@@ -2,6 +2,7 @@
 
 int main()
 {
+    //Substitua as vogais por (*).
     std::string frase = "eu sou dedicada"; 
     std::string textoFinal = ""; 
 
