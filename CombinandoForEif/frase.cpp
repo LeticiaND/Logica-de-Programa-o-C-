@@ -5,7 +5,7 @@ int main ()
     //Contagem de letras.
     //Escreva um programa que solicite ao usuário uma frase. Utilize um loop "for" para percorrer cada caractere da frase e, 
     //usando uma estrutura "if", conte e exiba quantas letras (excluindo espaços) estão presentes na frase.
-    std::string frase = "Eu amo a Leticia";
+    std::string frase = "Eu amo meu gato";
     int total = 0;
     // Essa é outra maneira que pode ser usada: frase.erase(std::remove_if(frase.begin(), frase.end(), ::isspace), frase.end()); 
     for(int i = 1; i <= frase.length(); i++)
@@ -15,7 +15,6 @@ int main ()
         {
             total++; // esta icrementndo o total de vezes que o for tem que rodar.
         }
-        
     }
     
     std::cout << total;
