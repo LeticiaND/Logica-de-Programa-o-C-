@@ -5,7 +5,7 @@ int main()
 {
     //Neste exercício, você vai criar uma função que conta quantas letras e quantos dígitos (números) existem em uma string.
 
-    std::string frase = "Tenho 20 anos";
+    std::string frase = "Tenho 29 anos";
     int quantidadeDeLetras = 0;
     int quantidadeDeNumeros = 0;
 
@@ -21,6 +21,6 @@ int main()
         }
     }
 
-    std::cout << "A frase contém: " << quantidadeDeLetras << "letras" << "\n" << "e " << quantidadeDeNumeros << " numeros";
+    std::cout << "A frase contém: " << quantidadeDeLetras << " letras" << "\n" << "e " << quantidadeDeNumeros << " numeros";
 
 } 
