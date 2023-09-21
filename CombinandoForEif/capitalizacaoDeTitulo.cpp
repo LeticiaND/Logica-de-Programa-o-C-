@@ -31,20 +31,18 @@ std::string capitalizar(std::string frase)
 {
     std::vector<std::string> novasPalavras = split(" ", frase);
     std::string remontando = ""; 
-
+    
     for(int i = 0; i < novasPalavras.size(); i++)
     {
-        
-        for (int k = 0; k < novasPalavras[i].length(); k++)
+        for(int k = 0; k < novasPalavras[i].length(); k++)
         {
-            if (k == 0) 
+            if(k == 0)
             {
-                remontando += (char) toupper(novasPalavras[i][k]);                 
-            } else 
+                remontando += (char) toupper(novasPalavras[i][k]); 
+            }else
             {
                 remontando += novasPalavras[i][k];
             }
-
         }
         remontando += " ";
     }
