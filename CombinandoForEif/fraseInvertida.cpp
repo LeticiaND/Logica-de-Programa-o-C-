@@ -25,17 +25,23 @@ std::vector<std::string> split(const char separator[], std::string text)
     return splitted;
 
 }
-int main()
+std::string inverterOrdem(std::string frase)
 {
-    //Neste exercício, você vai inverter a ordem das palavras em uma string.
-
-    std::string frase = "vou estudar hoje";
     std::string fraseInvertida = "";
+
     std::vector<std::string> novasPalavras = split(" ", frase);
 
     for(int i = novasPalavras.size() -1; i >= 0; i--)
     {
         fraseInvertida += novasPalavras[i] + " ";
     }
-    std::cout << fraseInvertida;
+
+    return fraseInvertida;
+}
+int main()
+{
+    //Neste exercício, você vai inverter a ordem das palavras em uma string.
+    std::string frase = "vou estudar hoje de tarde";
+    std::string fraseInvertida = inverterOrdem(frase);
+    std::cout << fraseInvertida << "\n";
 }

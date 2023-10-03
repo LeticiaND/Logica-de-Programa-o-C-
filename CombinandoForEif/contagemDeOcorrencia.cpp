@@ -1,19 +1,22 @@
 #include <iostream>
 
-int main()
+void contagemDeOcorrencia(char *letraUsuario, std::string palavra)
 {
-    std::string palavra = "Rafael";
-
     int resultado = 0;
 
     for(int i = 0; i < palavra.length(); i++)
     {
         char* letra = new char(palavra[i]);
-        if(strcmp(letra, "L") == 0 || strcmp(letra, "l") == 0)
+        if(strcmp(letra, letraUsuario) == 0 )
         {
             resultado++;
         }
     }
-
     std::cout << resultado;
+}
+int main()
+{
+
+    char *letra = "j";
+    contagemDeOcorrencia(letra, "Rafael");
 }
