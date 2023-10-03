@@ -1,11 +1,7 @@
 #include <iostream>
 
-int main()
+void generoUsuario (std::string genero)
 {
-    // Pedir para o usuario digitar a letra F ou a letra M e printar F(feminino) M(masculino) e caso nao for nemhum deses printar sexo invalido
-    
-    std::string genero = "C";
-
     if(genero == "M")
     {
         std::cout << "Masculino";
@@ -16,5 +12,10 @@ int main()
     {
         std::cout << "Sexo invalido";
     }
-    
+}
+
+int main()
+{
+    // Pedir para o usuario digitar a letra F ou a letra M e printar F(feminino) M(masculino) e caso nao for nemhum deses printar sexo invalido
+    generoUsuario("M");
 }
