@@ -2,19 +2,26 @@
 
 int main ()
 {
+    //FAZER!!!!!!!!!!
     //Verificar se uma palavra é um palíndromo. 
     //Um palíndromo é uma palavra que é igual quando lida da esquerda para a direita e vice-versa.
     // Escreva um programa que verifique se uma palavra é um palíndromo.
 
-    std::string palavra = "tenet";
+    std::string palavra = "rafael";
 
-    std::string palavraInverso = ""; // estamos criando uma variavel vazia que futuramente ira guardar o valor da variavel palavra
+    std::string palavraInverso = ""; 
 
-    for(int i = palavra.length() -1;i >= 0; i++)
+    for(int i = palavra.length() -1; i >= 0; i--)
     {
-        if(palavraInverso == palavra)
-        {
-            
-        }
+        palavraInverso += palavra[i];
     }
+
+    if(palavra == palavraInverso)
+    {
+        std::cout << "É um palindromo";
+    }else
+    {
+        std::cout << "Nao é um palindromo";
+    }
+
 }
