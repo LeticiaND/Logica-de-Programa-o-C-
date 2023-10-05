@@ -1,10 +1,7 @@
 #include <iostream>
 
-int main()
+int calcularAsoma ()
 {
-    //Calcular a soma dos múltiplos de 3, entre 1 e 100 usando um loop "for" e estrutura "if".
-    //1683
-
     int soma = 0;
 
     for(int i = 0; i <= 100; i++)
@@ -14,5 +11,12 @@ int main()
             soma = soma + i;
         }
     }
-    std::cout << soma;
+    return soma;
+}
+int main()
+{
+    //Calcular a soma dos múltiplos de 3, entre 1 e 100 usando um loop "for" e estrutura "if".
+    //1683
+    
+    std::cout << calcularAsoma();
 }

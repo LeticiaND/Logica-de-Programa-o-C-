@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 int main()
 {
     // Adcione um numero e mostre se ese numero é perfeito ou nao.
@@ -19,5 +20,4 @@ int main()
     {        
         std::cout << num << " não é um numero perfeito.";
     }
-    return 0;
 }
