@@ -1,8 +1,7 @@
 #include <iostream>
 
-int main()
+void imprimirDe1a50 ()
 {
-    //Imprimir de 1 a 50 os numeros pares.
     for(int i = 1; i <= 50; i++)
     {
         if(i % 2 == 0)
@@ -11,4 +10,10 @@ int main()
         }
         
     }
+}
+int main()
+{
+    //Imprimir de 1 a 50 os numeros pares.
+    imprimirDe1a50 ();
+
 }
