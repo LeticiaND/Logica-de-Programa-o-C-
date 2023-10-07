@@ -1,9 +1,7 @@
 #include <iostream>
 
-int main ()
+int QuantidadeDePalavras (std::string frase)
 {
-    // Quantas palavras tem em uma frase.
-    std::string frase = "Eu amo o meu gato"; 
     int resultado = 1; 
 
     for(int i = 0; i <= frase.length(); i++)
@@ -13,7 +11,14 @@ int main ()
         {
             resultado++;
         }
-    }
-    std::cout << resultado;
+    } 
+    return resultado;
+}
+int main ()
+{
+    // Quantas palavras tem em uma frase.
+    std::string frase = "Eu amo o meu gato"; 
+    int resultado = QuantidadeDePalavras(frase);
 
+    std::cout << resultado;
 }

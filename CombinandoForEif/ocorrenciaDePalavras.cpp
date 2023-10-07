@@ -36,12 +36,8 @@ void printList(std::vector<std::string> texts)
     std::cout << "]";
 } 
 
-int main ()
+int QuantidadeDePalavras (std::string palavra, std::string frase)
 {
-    //Neste exercício, você vai contar quantas vezes uma determinada palavra aparece em uma string.
-
-    std::string palavra = "eu";
-    std::string frase = "eu te amo eu te adoro";
     std::vector<std::string> palavras = split(" ", frase);
 
     int quantidadeDePalavras = 0;
@@ -53,5 +49,15 @@ int main ()
             quantidadeDePalavras++;
         }
     }
-    std::cout << quantidadeDePalavras;
+    return quantidadeDePalavras;
+}
+int main ()
+{
+    //Neste exercício, você vai contar quantas vezes uma determinada palavra aparece em uma string.
+
+    std::string palavra = "nada";
+    std::string frase = "eu te amo eu te adoro";
+    
+    int resultado = QuantidadeDePalavras(palavra,frase);
+    std::cout << resultado;
 }
