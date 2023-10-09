@@ -26,17 +26,11 @@ std::vector<std::string> split(const char separator[], std::string text)
 
 }
 
-int main()
-{
-    //Neste exercício, você vai substituir todas as ocorrências de uma palavra por outra em uma string.
-
-    std::string frase = "Eu vou estudar hoje, e vou estudar amanha";
-    std::string palavra = "estudar";
-    std::string palavraSubstituir = "trabalhar";
+std::string substituirOcorrencias (std::string palavra, std::string frase, std::string palavraSubstituir)
+{    
     std::string remontandoFrase = "";
-
     std::vector<std::string> novasPalavras = split(" ", frase);
-
+    
     for(int i = 0; i < novasPalavras.size(); i++)
     {
         if(novasPalavras[i] == palavra)
@@ -48,17 +42,14 @@ int main()
         }
         remontandoFrase += " ";
     }
-    
-// segunda forma de fazer.
-    for(int i = 0; i < novasPalavras.size(); i++)
-    {
-        if(novasPalavras[i] == palavra)
-        {
-            novasPalavras[i] = palavraSubstituir;
-        }
-
-        remontandoFrase += novasPalavras[i] + " ";
-    }
-
-    std::cout << remontandoFrase;
+    return remontandoFrase;
+}
+int main()
+{
+    //Neste exercício, você vai substituir todas as ocorrências de uma palavra por outra em uma string.
+    std::string frase = "Eu vou estudar hoje, e vou estudar amanha";
+    std::string palavraSubstituir = "irei";
+     std::string palavra = "vou";
+    std::cout << substituirOcorrencias(palavra, frase, palavraSubstituir);
+ 
 }
