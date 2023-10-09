@@ -49,7 +49,7 @@ int main()
     //Neste exercício, você vai substituir todas as ocorrências de uma palavra por outra em uma string.
     std::string frase = "Eu vou estudar hoje, e vou estudar amanha";
     std::string palavraSubstituir = "irei";
-     std::string palavra = "vou";
+    std::string palavra = "vou";
     std::cout << substituirOcorrencias(palavra, frase, palavraSubstituir);
  
 }
