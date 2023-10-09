@@ -1,11 +1,8 @@
 #include <iostream>
 
-int main()
+std::string substituirVogais (std::string frase)
 {
-    //Substitua as vogais por (*).
-    std::string frase = "eu sou dedicada"; 
-    std::string textoFinal = ""; 
-
+    std::string textoFinal = "";
     for(int i = 0; i < frase.length(); i++)
     {
         char* letter = new char(frase[i]);
@@ -18,6 +15,13 @@ int main()
             textoFinal += letter;
         }
     }
+    return textoFinal;
+}
+int main()
+{
+    //Substitua as vogais por (*).
+    std::string frase = "eu sou dedicada"; 
+    std::string receber = substituirVogais(frase);
 
-    std::cout << textoFinal;
+    std::cout << receber;
 }
