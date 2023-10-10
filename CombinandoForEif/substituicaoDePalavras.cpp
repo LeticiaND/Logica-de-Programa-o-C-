@@ -51,5 +51,5 @@ int main()
     std::string palavraSubstituir = "irei";
     std::string palavra = "vou";
     std::cout << substituirOcorrencias(palavra, frase, palavraSubstituir);
- 
+
 }

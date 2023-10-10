@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-
+//TERMINAR!!!!!!!!!!!!!!!!!!!!!!
 std::vector<std::string> split(const char separator[], std::string text) 
 {
     std::vector<std::string> splitted;
@@ -26,23 +26,32 @@ std::vector<std::string> split(const char separator[], std::string text)
 
 }
 
-int main()
+std::string substituirPalavraProibida (std::string novaFrase)
 {
-    std::string novaFrase = "eu sou um idiota";
     std::vector<std::string> palavrasProibidas = {"idiota", "louco", "besta"};
+    std::string palavraSubstituir = "palavra proibida";
     std::vector<std::string> novasPalavras = split(" ", novaFrase);
-
+    std::string palavraFinal = "";
     for(int i = 0; i < novasPalavras.size(); i++)
     {
-        
+        //std::cout << novasPalavras[i];
         for(int k = 0; k < palavrasProibidas.size(); k++)
         {
             if(novasPalavras[i] == palavrasProibidas[k]) {
-                std::cout << "achei";
+                novasPalavras[i] = palavraSubstituir;
             }
         }
-
+        palavraFinal += novasPalavras[i] + " ";
     }
+
+    return palavraFinal;
+}
+
+int main()
+{
+    std::string novaFrase = "eu sou um idiota";
+    std::string resultado =  substituirPalavraProibida(novaFrase);
+    std::cout << resultado;
 }
 
     
