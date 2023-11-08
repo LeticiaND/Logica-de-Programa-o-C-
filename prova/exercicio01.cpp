@@ -1,25 +1,25 @@
 #include <iostream>
 
-int quantidadeDeLetras(std::string palavra, char* letra)
+//Quantidade de letras iguais (lembre que o usuario precisa escolher uma letra)
+
+int quantidadeDeLetrasIguais(std::string palavra, char* letra)
 {
     int recebe = 0;
     for(int i = 0; i <= palavra.size(); i++)
     {
-        char* letraAtual = new char(palavra[i]);
-        if(strcmp(letraAtual, letra) == 0)
-        {
+       char* letraAtual = new char(palavra[i]);
+       if(strcmp(letraAtual, letra) == 0)
+       {
             recebe++;
-            
-        }
+       } 
     }
     return recebe;
 }
 
-int main ()
+int main()
 {
-    std::string palavra = "Letciaa";
-    char* letra = "a";
-
-    int resultado = quantidadeDeLetras(palavra, letra);
+    std::string palavra = "Leticia";
+    char* letra = "i";
+    int resultado = quantidadeDeLetrasIguais(palavra, letra);
     std::cout << resultado;
 }
