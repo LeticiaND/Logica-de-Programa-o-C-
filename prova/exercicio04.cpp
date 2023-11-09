@@ -1,20 +1,20 @@
 #include <iostream>
-
+//Descobrir se a palavra é um palindrome.
 int main()
 {
     std::string palavra = "tenet";
     std::string recebe = "";
 
-    for(int k = palavra.length(); k > 0; k--)
+    for(int i = palavra.length() -1; i >= 0; i--)
     {
-        recebe += palavra[k];
+        recebe += palavra[i];
     }
-    if(palavra == recebe)
+    if(recebe == palavra)
     {
         std::cout << "É um palindrome";
     }else
     {
-        std::cout << "Nao é um palindrome";
+        std::cout << "Não é um palindrome";
     }
     
 }

@@ -1,25 +1,26 @@
 #include <iostream>
-std::string substituicao (std::string palavra, char* letraSubstituir)
+//Substituir letra.
+std::string substituirLetra(std::string palavra, char* letraSubstituir)
 {
-    std::string resultado = "";
-    for(int i = 0; i < palavra.length(); i++)
+    std::string recebe = "";
+    for(int i = 0; i <= palavra.length(); i++)
     {
-        char* letra = new char(palavra[i]);
-        if(strcmp(letra, letraSubstituir) == 0)
+        char* letraAtual = new char(palavra[i]);
+        if(strcmp(letraAtual, letraSubstituir) == 0)
         {
-
-            resultado += "*";
+            recebe += "*";
         }else
         {
-            resultado += letra;
+            recebe += letraAtual;
         }
     }
-    return resultado;
+    return recebe;
 }
+
 int main()
 {
     std::string palavra = "Leticia";
     char* letraSubstituir = "i";
-    std::string resultadoFinal = substituicao(palavra, letraSubstituir);
+    std::string resultadoFinal = substituirLetra(palavra, letraSubstituir);
     std::cout << resultadoFinal;
 }

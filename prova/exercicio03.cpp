@@ -1,23 +1,22 @@
 #include <iostream>
 #include <vector>
-
-std::vector<int> limpandoLista(std::vector<int> lista)
+//limpar lista.
+std::vector<int> limparLista(std::vector<int> lista)
 {
-    std::vector<int> recebe;
-
-    return recebe;
+    return std::vector<int>();
 }
 
 int main()
 {
     std::vector<int> lista = {1,2,3,4,5};
-    std::vector<int> resultado = limpandoLista(lista);
+    std::vector<int> resultado = limparLista(lista);
+
     if (resultado.empty())
     {
-        std::cout << "vazio";
-    } else
+        std::cout << "vazia";
+    } else 
     {
-        std::cout << "contem valor";
+        std::cout << "tem valores";
     }
 
 }
