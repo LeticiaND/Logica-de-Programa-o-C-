@@ -1,6 +1,6 @@
 #include <iostream>
 
-void contagemDeOcorrencia(char *letraUsuario, std::string palavra)
+int contagemDeOcorrencia(char *letraUsuario, std::string palavra)
 {
     int resultado = 0;
 
@@ -12,11 +12,11 @@ void contagemDeOcorrencia(char *letraUsuario, std::string palavra)
             resultado++;
         }
     }
-    std::cout << resultado;
+    return resultado;
 }
 int main()
 {
 
-    char *letra = "j";
-    contagemDeOcorrencia(letra, "Rafael");
+    char *letra = "a";
+    std::cout << contagemDeOcorrencia(letra, "Rafael");
 }
